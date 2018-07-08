@@ -79,9 +79,9 @@ $(document).ready(function () {
 	reconstruirTabla();
 
 	$("#page2").on("pageshow", function (event, ui) {
-		var LatLng = new google.maps.LatLng(18.4730457,-69.941293); 
+		var LatLng = new google.maps.LatLng(-28.062662,-67.56607429999997); 
 		var opciones = {            
-				zoom: 10,
+				zoom: 5,
 				center: LatLng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP        
 		};

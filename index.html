@@ -9,28 +9,29 @@
 		#dvMap, 
 		#dvMap2 {
 			width: 100%;
-			height: 200px;
+			height: 400px;
 			padding: 0
 		}
+        
 	</style>
 	<script src="js/external/jquery/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.5.js"></script>
 	
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjve5vaLJohiHU3hjrNfTf52HdBmDKmzI"></script>
-	<script src="js/evfin.js"></script>
+	<script src="js/javascript.js"></script>
 </head>
 <body>
 	<div data-role="page" id="page1">
-		<div data-role="header"><h2>Gestión Hotel</h2></div>
+		<div data-role="header" data-theme="b"><h2>Gestión Hotel</h2></div>
 		<div data-role="content" class="ui-content">
-			<a id="btnRegistrar" data-role="button">Registrar Hotel</a>
-			<a id="btnPage3" data-role="button">Lista Hoteles</a>
+			<a id="btnRegistrar" data-role="button" class="ui-btn ui-icon-plus ui-btn-icon-left ui-overlay-shadow ui-btn-active ui-corner-all ">Registrar Hotel</a>
+			<a id="btnPage3" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all" >Lista Hoteles</a>
 		</div>
-		<div data-role="footer"><h2>Gestión Hotel</h2></div>
+		<div data-role="footer" data-theme="b" ><h2>Gestión Hotel</h2></div>
 	</div>
 	
 	<div data-role="page" id="page2">
-		<div data-role="header"><h2>Registro de Hotel</h2></div>
+		<div data-role="header" data-theme="b"><h2>Registro de Hotel</h2></div>
 		<div data-role="content" class="ui-content">
 			<label for="txtNombre">Nombre:</label><input type="text" id="txtNombre" name="txtNombre"  required placeholder="Escriba el nombre del hotel.">
 			<hr />
@@ -44,23 +45,24 @@
 			<hr/>
 			<label for="txtEstrellas">Estrellas:</label><input type="number" id="txtEstrellas" name="txtEstrellas"  required min="1" max="5" placeholder="Escriba # de estrellas.">
 			<hr/>		
-			<a id="btnCrear" data-role="button">Registrar Hotel</a>
-			<a id="btnPage1" data-role="button">Volver</a>
+			<a id="btnCrear" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Registrar Hotel</a>
+			<a id="btnPage1" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Volver</a>
 		</div>
-		<div data-role="footer"></div>
+			<div data-role="footer" data-theme="b"><h2>Gestión Hotel</h2></div>
 	</div>
 	
 	<div data-role="page" id="page3">
-		<div data-role="header"><h2>Lista Hoteles</h2></div>
+		<div data-role="header" data-theme="b"><h2>Lista Hoteles</h2></div>
 		<div data-role="content" class="ui-content">
 			<ul data-role="listview" id="ulHotels">
 			</ul>
 		</div>
-		<a id="btnPage1b" data-role="button">Volver</a>
+		<a id="btnPage1b" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Volver</a>
+        	<div data-role="footer" data-theme="b"><h2>Gestión Hotel</h2></div>
 	</div>
 	
 	<div data-role="page" id="pgHotel">
-		<div data-role="header"><h2>Datos Hotel</h2></div>
+		<div data-role="header" data-theme="b"><h2>Datos Hotel</h2></div>
 		<div data-role="content" class="ui-content">
 			<strong>Nombre:</strong>&nbsp;<span id="lblNombre">[nombre]</span><br />
 			<strong>Ciudad:</strong>&nbsp;<span id="lblCiudad">[ciudad]</span><br />
@@ -70,10 +72,11 @@
 			<div id="dvMap2">
 			
 			</div>
-			<a id="btnDelete" data-role="button" class="ui-btn ui-btn-b ui-icon-delete ui-btn-icon-left">Eliminar Hotel</a>
-			<a id="btnPage3a" data-role="button">Lista Hoteles</a>
-			<a id="btnPage1c" data-role="button">Volver al Inicio</a>
+			<a id="btnDelete" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Eliminar Hotel</a>
+			<a id="btnPage3a" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Lista Hoteles</a>
+			<a id="btnPage1c" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon ui-overlay-shadow ui-btn-active ui-corner-all">Volver al Inicio</a>
 		</div>
+        	<div data-role="footer" data-theme="b" ><h2>Gestión Hotel</h2></div>
 	</div>
 </body>
 </html>
